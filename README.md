@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https:github.com/ShreyasKR8/404-Not-Found/tree/main">
+    <a href="https://github.com/ShreyasKR8/404-Not-Found/blob/main/index.html">
       Solution
     </a>
     <span> | </span>
