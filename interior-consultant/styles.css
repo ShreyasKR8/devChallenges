@@ -1,0 +1,313 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #181719;
+    color: #FFFFFF;
+    height: 730px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header >p {
+    flex-shrink: 0;
+    border: 1px solid #FFFFFF;
+    font-family: 'Crimson Pro', serif;
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-left: 12px;
+    height: fit-content; /* weird, Otherwise border gets stretched */
+    padding: 10px 8px;
+}
+@media only screen and (max-width: 500px) {
+
+    .menu {
+        margin-top: 16px;
+        margin-right: 8px;
+        position: relative;
+        list-style: none;
+
+    }
+
+    .menu-items {
+        display: none;
+        /* position: absolute; */
+        /* list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 18px; */
+    }
+
+    .menu-items li:first-of-type {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    .menu-items li {
+        margin-bottom: 30px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    .menu:active .menu-items {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        background-color: #181719;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    
+    }
+}
+
+.content h1 {
+    /* border: 1px solid #FFFFFF; */
+    margin-left: 12px;
+    margin-top: 36px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.content > p {
+    /* border: 1px solid #FFFFFF; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 58%;
+    margin-left: 12px;
+    margin-top: 25px;
+}
+
+.read-more {
+    /* border: 1px solid #FFFFFF; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-left: 12px;
+    display: flex;
+}
+
+.read-more a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.read-more a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.image-container {
+
+    /* border: 1px solid red; */
+    margin-top: 75px;
+    /* z-index: 2; */
+    position: relative;
+}
+
+
+.image-container>img {
+    /* border: 1px solid red; */
+    margin-left: 12px;
+    width: 350px;
+    height: 240px;
+}
+
+.card {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 192px;
+    left: 63px;
+    background-color: #181719;
+    width: 285px;
+    height: 139px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.card img {
+    float: left;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 12px;
+    border-radius: 30px;
+    
+    /* border: 1px solid red; */
+}
+
+.card-name {
+    /* border: 1px solid red; */
+    margin-top: 16px;
+    margin-left: 75px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500; 
+}
+
+.card-designation {
+    /* border: 1px solid red; */
+    margin-left: 75px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #828282;
+}
+
+.card-comment {
+    /* border: 1px solid red; */
+    margin: 20px;
+    width: 65%;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer {
+    color: #A9A9A9;
+    text-align: center;
+    margin-top: 142px;
+    font-size: 14px;
+}
+
+.footer-username{
+    color: #A9A9A9;
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        height: 1080px;
+    }
+    header >p {
+        font-size: 14px;
+        margin-top: 40px;
+        margin-left: 75px;
+    }
+    
+    .menu {
+        list-style: none;
+    }
+
+    .menu img {
+        display: none;
+    }
+
+    .menu-items {
+        margin-top: 40px;
+        list-style: none;
+        display: flex;
+    }
+
+    .menu-items a {
+        /* border: 1px solid red; */
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 80px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .item-1 p {
+        width: fit-content;
+        font-weight: 700;
+        border-bottom-style: solid;
+        margin-right: 80px;
+
+    }
+
+    .content-body {
+        display: flex;
+    }
+
+    .content {
+        margin-top: 220px;
+        margin-left: 75px;
+    }
+
+    .content h1 {
+        font-size: 48px;
+    }
+
+    .content p{
+        /* border: 1px solid red; */
+        font-size: 24px;
+        width: 380px;
+        margin-top: 40px;
+    }
+
+    .read-more {
+        margin-top: 48px;
+    }
+
+    .read-more a {
+        font-size: 18px;
+        /* border: 1px solid red; */
+        width: fit-content;
+        margin-right: 15px;
+    }
+
+    .image-container {
+        margin-top: 150px;
+        margin-left: 200px;
+    }
+    .image-container>img {
+        width: 750px;
+        height: 500px;
+    }
+    
+    .card {
+        width: 410px;
+        height: 190px;
+        left: 325px;
+        top: 430px;
+    }
+    
+    .card img {
+        margin-top: 15px;
+        margin-left: 30px;
+        width: 48px;
+    }
+
+    .card-name {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 93px;
+    }
+
+    .card-designation {
+        font-size: 12px;
+        margin-left: 93px;
+    }
+
+    .card-comment {
+        font-size: 24px;
+        width: 250px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    footer {
+        margin-top: 240px;
+    }
+}
