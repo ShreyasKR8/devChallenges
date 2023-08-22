@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1{
+    font-family: 'PT serif', serif;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 35px;
+    margin-left: 12px;
+}
+
+.header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.header p{
+    /* border: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-left: 12px;
+    margin-bottom: 55px;
+}
+
+.image-grid {
+    /* border: 1px solid red;   */
+    /* width: 93%; */
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-grid-item {
+    /* border: 1px solid red; */
+    width: 155px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+@media (max-width: 960px) {
+    .image-grid-item:nth-of-type(even) {
+        margin-left: 30px;
+        top: 50px;
+    }
+    .image-grid-item:last-of-type {
+        margin-bottom: 132px;
+    
+    }
+}
+
+img{
+    /* border: 1px solid red; */
+    width: 138px;
+}
+
+.image-grid-item figcaption {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.image-grid-item p {
+    /* border: 1px solid red; */
+    font-family: 'PT serif', serif;
+    font-weight: 400;
+    font-size: 10px;
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 140px;
+    top: 0;
+}
+
+.footer {
+    font-size: 14px;
+    text-align: center;
+    color: #A9A9A9;
+    margin-bottom: 20px;
+}
+
+.footer-username {
+    color: #A9A9A9;
+    text-decoration: line;
+}
+
+@media only screen and (min-width: 961px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid red; */
+    }
+
+    .header h1{
+        /* border:  1px solid red; */
+        margin-top: 100px;
+        margin-left: 240px;
+        font-size: 36px;
+    }
+
+    .header-content {
+        margin-top: 100px;
+        /* border: 1px solid red; */
+        flex: auto; /* for no gap between containers */
+        margin-left: 200px;
+        
+    }
+
+    .header h3 {
+        /* border: 1px solid red; */
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .header p{
+        /* border: 1px solid red; */
+        width: 400px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .image-grid {
+        /* border: 1px solid red;   */
+        width: 70%;
+        margin-left: 243px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    img{
+        /* border: 1px solid red; */
+        width: 240px;
+    }
+
+    .image-grid-item {
+        /* border: 1px solid red; */
+        width: 280px;
+        margin-left: 56px;
+        position: relative;
+    }
+
+    .image-grid-item:nth-child(3n-2) {
+        margin-left: 0;
+    }
+
+    .image-grid-item:nth-child(2),
+    .image-grid-item:nth-child(5) {
+        margin-top: 75px;
+    }
+
+    .image-grid-item figcaption {
+        
+        font-size: 18px;
+    }
+    
+    .image-grid-item p {
+        font-size: 12px;     
+        left: 245px;
+    }
+
+    .footer {
+        font-size: 14px;
+    } 
+}
